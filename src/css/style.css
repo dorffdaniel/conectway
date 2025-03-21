@@ -1,0 +1,179 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    gap: 15em;
+    align-items: center;
+    height: 100vh;
+}
+
+.logo img{
+    height: 40em;
+}
+
+.inicio{
+    padding: 1em;
+}
+
+.inicio h1{
+    margin-bottom: 2em;
+}
+
+.inputs{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    flex-direction: column;
+    margin-bottom: 2em;
+}
+
+.inputs input{
+    width: 18em;
+    height: 2em;
+    border-radius: 0.5em;
+    border: none;
+    background: #71c6e7;
+    padding-left: .5em;
+}
+
+.inicioBotoes{
+    display: flex;
+    justify-content: center;
+    gap: 3em;
+}
+
+.inicioBotoes button{
+    background: #066083;
+    padding: .5em;
+    border-radius: 0.5em;
+    border: none;
+}
+
+.inicioBotoes button a{
+    color: #ffffff;
+}
+
+.cabecalho{
+    display: flex;
+    align-items: center;
+    height: 5em;
+    background: #066083;
+    padding-left: 2em;
+    position: relative;
+}
+
+.hamburguer{
+    display: block;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.linha{
+    width: 2em;
+    height: .2em;
+    background: #ffffff;
+    margin: 0.5em;
+    transition: all ease .8s;
+}
+
+.hamburguer.ativado .linha:nth-child(1){
+    transform: rotate(45deg);
+    position: absolute;
+    transition: all ease 0.8s;
+}
+
+.hamburguer.ativado .linha:nth-child(2){
+    display: none;
+}
+
+.hamburguer.ativado .linha:nth-child(3){
+    transform: rotate(-45deg);
+    position: absolute;
+    transition: all ease 0.8s;
+}
+
+.navList{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    width: 15em;
+    position: absolute;
+    background: #71c6e7;
+    opacity: 0;
+    transform: translateX(-150px);
+    transition: all ease 0.8s;
+    border-radius: 5em;
+}
+
+.mostrar{
+    opacity: 1;
+    transition: all ease 0.8s;
+    transform: translateX(0px);
+    border-radius: 0em;
+}
+
+.navList li{
+    color: #ffffff;
+    font-size: 1.3em;
+}
+
+.conteudoBusca{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 5em;
+    height: 45em;
+    background: #e9e3e1;
+}
+
+.conteudoBusca .logo img{
+    height: 20em;
+    border-radius: 1em;
+}
+
+.cardInputs{
+    display: grid;
+    place-items: center;
+    gap: 1em;
+    padding: 1em;
+    background: #f0f0f0;
+    border-radius: 1em;
+}
+
+
+.rodape{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rodape .anuncios{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    height: 5em;
+    background: #066083;
+    width: 100%;
+    margin-bottom: 2em;
+}
+
+/* cadastro */
+
+.cadastro{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
