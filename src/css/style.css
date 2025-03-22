@@ -19,6 +19,11 @@
     height: 40em;
 }
 
+.inicioPrincipal{
+    display: flex;
+    flex-direction: column;
+}
+
 .inicio{
     padding: 1em;
     display: flex;
@@ -26,7 +31,7 @@
     width: 20%;
 }
 
-.inicio h1{
+.inicioPrincipal h1{
     margin-bottom: 2em;
 }
 
