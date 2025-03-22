@@ -15,21 +15,46 @@
         </div>
         <nav>
             <ul class="navList">
-                <li>Problemas</li>
-                <li>Taxi</li>
-                <li>Trabalho</li>
+                <li onclick="conteudos(0)">Inicio</li>
+                <li onclick="conteudos(1)">Seja Premium</li>
+                <li onclick="conteudos(2)">Problemas</li>
+                <li onclick="conteudos(3)">Transporte Privado</li>
+                <li onclick="conteudos(4)">Lugares favoritos</li>
             </ul>
         </nav>
     </header>
     <main class="conteudoBusca">
-        <section class="logo">
-            <img src="src/img/logoConect.jpg" alt="logo da Empresa conectway">
+        <section class="conteudosLi aparecer">
+            <section class="logo">
+                <img src="src/img/logoConect.jpg" alt="logo da Empresa conectway">
+            </section>
+            <section class="cardInputs">
+                <input type="text" placeholder="Partida">
+                <input type="text" placeholder="destino">
+                <input type="date" name="" id="">
+                <button>pesquisar</button>
+            </section>
         </section>
-        <section class="cardInputs">
-            <input type="text" placeholder="Partida">
-            <input type="text" placeholder="destino">
-            <input type="date" name="" id="">
-            <button>pesquisar</button>
+        <section class="conteudosLi">
+            <div class="premium">
+                <p>seja Premium</p>
+            </div>
+        </section>
+        <section class="conteudosLi">
+            <div class="problemas">
+                <p>tem problema na linha tal</p>
+            </div>
+        </section>
+        <section class="conteudosLi">
+            <div class="transporte">
+                <p>uber</p>
+                <p>bolt</p>
+            </div>
+        </section>
+        <section class="conteudosLi">
+            <div class="lugares favoritos">
+                <p>lugares favoritos</p>
+            </div>
         </section>
     </main>
     <footer class="rodape">
